@@ -41,17 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'corsheaders',
 
-    'rest_auth',
-    'rest_auth.registration',
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_auth',
+    'rest_auth.registration',
 
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 
-    'users',
-    'api'
+    'users'
+
 ]
 
 MIDDLEWARE = [
