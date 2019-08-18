@@ -110,9 +110,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-    ),
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'rest_framework.authentication.TokenAuthentication',
+    # ),
 }
 
 CSRF_COOKIE_NAME = "csrftoken"
@@ -125,7 +125,7 @@ AUTH_USER_MODEL = 'users.User'
 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'users.serializers.UserSerializer',
-    # 'TOKEN_SERIALIZER': 'users.serializers.TokenSerializer'
+    'TOKEN_SERIALIZER': 'users.serializers.TokenSerializer'
 }
 
 REST_AUTH_REGISTER_SERIALIZERS = {
